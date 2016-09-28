@@ -1,0 +1,7 @@
+Release 0 : Understanding data structures
+
+1. Stack => Last In First Out
+2. Queue => First In First Out
+3. Linked List => suatu linked list yang hanya memiliki satu variabel pointer saja, dimana variable pointer terdiri dari
+head dan tail
+4. Set => kumpulan Object yang mana tidak boleh ada dua dari objek yang sama di dalam satu himpunan
