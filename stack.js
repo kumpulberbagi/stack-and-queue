@@ -18,7 +18,7 @@ class Stack {
   }
 
   pop() {
-    if (this._datas === []) {
+    if (this._datas.length === 0) {
       console.log("There's no data left, nothing to delete!");
     }
     else {
@@ -28,8 +28,8 @@ class Stack {
   }
 
   peek() {
-    if (this._datas === []) {
-      console.log("There's no data be displayed!");
+    if (this._datas.length === 0) {
+      return "There's no data be displayed!";
     }
     else {
       return this._datas[this._datas.length-1];
@@ -37,7 +37,7 @@ class Stack {
   }
 
   isEmpty() {
-    if (this._datas === []) {
+    if (this._datas.length === 0) {
       return true;
     } else {
       return false;
@@ -45,15 +45,19 @@ class Stack {
   }
 }
 
-var my_stack = new Stack("Hello!");
+var my_stack = new Stack();
 
-console.log(my_stack.push("World!"));
+console.log(my_stack.push("Hello!"));
 console.log(my_stack.push("Eat"));
 console.log(my_stack.push("Pray"));
 console.log(my_stack.push("Code"));
 
-console.log(my_stack.peek());
+//console.log(my_stack.peek());
 
+console.log(my_stack.pop());
+console.log(my_stack.pop());
+console.log(my_stack.pop());
 console.log(my_stack.pop());
 
 console.log(my_stack.peek());
+console.log(my_stack.isEmpty());
