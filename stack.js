@@ -55,4 +55,5 @@ console.log(my_stack.push("Code"));
 console.log(my_stack.peek());
 
 console.log(my_stack.pop());
+
 console.log(my_stack.peek());
