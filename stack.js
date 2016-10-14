@@ -41,4 +41,10 @@ class Stack {
 }
 
 let test = new Stack()
-test.push("aji","lantang")
+test.push("aji")
+test.push("lantang")
+test.push(4)
+test.push(5)
+test.push(8)
+test.push(8)
+console.log(test.data);
