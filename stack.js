@@ -3,14 +3,14 @@
 class Stack {
   constructor(data) {
     this.data = []
-    this.maxSize = 5
+    this.maxSize = 18
   }
 
   push(x) {
-    if (this.isFull()==="there is space") {
+    if (this.isFull() === "there is space") {
         this.data.push(x)
     }else {
-        console.log("data full")
+        return console.log("data full")
     }
   }
 
@@ -19,7 +19,7 @@ class Stack {
   }
 
   peek() {
-    return this.data[this.data.length]
+    return this.data[this.data.length-1]
   }
 
   isEmpty() {
@@ -42,9 +42,6 @@ class Stack {
 
 let test = new Stack()
 test.push("aji")
-test.push("lantang")
-test.push(4)
-test.push(5)
-test.push(8)
-test.push(8)
-console.log(test.data);
+test.push(2)
+test.push(3)
+console.log(test.peek());

@@ -14,10 +14,7 @@ class Queue {
     }
   }
 
-  pop() {
-    this.data.pop()
-  }
-  dequeue(){
+  pop(){
     if (this.isEmpty()==="No") {
       this.data.splice(0,1)
     }else {
@@ -26,7 +23,7 @@ class Queue {
   }
 
   peek() {
-    return this.data[this.data.length]
+    return this.data[this.data.length-1]
   }
 
   isEmpty() {
@@ -50,4 +47,5 @@ test.enqueue("aji")
 test.enqueue("aji2")
 test.enqueue("aji3")
 test.enqueue("aji4")
-test.dequeue()
+test.pop()
+console.log(test.data);

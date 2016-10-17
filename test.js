@@ -19,7 +19,7 @@ class Stack {
   }
 
   peek() {
-    return this.data[this.data.length]
+    return this.data[this.data.length-1]
   }
 
   isEmpty() {
@@ -44,3 +44,4 @@ let test = new Stack()
 test.push("aji")
 test.push(2)
 test.push(3)
+console.log(test.peek());
