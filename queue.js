@@ -1,6 +1,6 @@
 "use strict"
 
-class Stack {
+export class Stack {
   constructor() {
     this.array = [];
     this.max = 10;
