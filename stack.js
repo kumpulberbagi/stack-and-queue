@@ -4,6 +4,7 @@ class Stack {
   constructor() {
     this._arr=[];
     this.MAX_SIZE = 10;
+
   }
 
   push(x) {
@@ -24,12 +25,7 @@ class Stack {
   }
 
   peek() {
-    if(this._arr.length >1 ){
-      this._arr.reverse()
-      if(this._arr.length >1){
-        this._arr.reverse()
-      }
-    }
+    return this._arr[this._arr.length-1];
   }
 
   isEmpty() {
@@ -65,6 +61,5 @@ let my_stack = new Stack();
   //
   // // my_stack.push(15);
   // my_stack.pop();
-  // my_stack.peek()
-
   console.log(my_stack._arr);
+  console.log(my_stack.peek());

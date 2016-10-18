@@ -10,6 +10,9 @@ class Queue {
       this._arr.push(x)
     }
   }
+  peek() {
+    return this._arr[0];
+  }
   pop(){
     this._arr.shift()
     return this
@@ -41,3 +44,4 @@ let my_stack = new Queue();
   // my_stack.peek()
 
   console.log(my_stack._arr);
+  console.log(my_stack.peek());
