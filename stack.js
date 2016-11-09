@@ -17,6 +17,7 @@ class Stack {
         }
     }
 
+    //For Stack LIFO
     pop() {
         //Hapus data dari belakang
         if (this.arr.length == 0) {
@@ -26,6 +27,7 @@ class Stack {
         }
     }
 
+    //For Quenue FIFO
     peek() {
         //hapus data dari depan
         if (this.arr.length == 0) {
